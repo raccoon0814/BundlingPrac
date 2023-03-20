@@ -5,7 +5,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin")
 module.exports = {
   entry: "./src/script.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
     filename: "app.bundle.js",
   },
   module: {
@@ -19,7 +19,7 @@ module.exports = {
   },
   devServer: {
     static:{
-        directory: path.resolve(__dirname, 'dist')
+        directory: path.resolve(__dirname, 'docs')
     },
     port:3001,
   },
